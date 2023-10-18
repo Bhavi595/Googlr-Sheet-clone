@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="optionbox.css" />
+  </head>
+  <body>
+
+    <!-- first hafe -->
+    <div id="firstbox">
+      <div id="menu-bar">
+        <div id="bold"  onclick="Bold_Click(this)"><i class="fa-solid fa-bold fa-lg"></i></div>
+        <div id="italic" onclick="Italic_Click(this)"><i class="fa-solid fa-italic fa-lg"></i></div>
+        <div id="underline" onclick="Underline_click(this)"><i class="fa-solid fa-underline fa-lg"></i></div>
+        <div id="align-left"   class="Alignitemclass Activemenu " onclick="Align_text_click(this)" data-value = "left"><i class="fa-solid fa-align-left fa-lg"></i></div>
+        <div id="align-right"  class="Alignitemclass" onclick="Align_text_click(this)" data-value="right"><i class="fa-solid fa-align-right fa-lg"></i></div>
+        <div id="align-center" class="Alignitemclass" onclick="Align_text_click(this)" data-value="center"><i class="fa-solid fa-align-center fa-lg"></i></div>
+        <div id="fontSize" >
+          <label for="selectno"><i class="fa-solid fa-text-height fa-lg"></i></label>
+          <select onchange="fontSizechange(this)"  id="selectno" style="width:39px; height:23px; border: 2px solid black;">
+            <option value="16">16</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="30">30</option>
+            <option value="32">32</option>
+            <option value="34">34</option>
+            <option value="36">36</option>
+            <option value="38">37</option>
+            <option value="40">40</option>
+          </select>
+        </div>
+        <div id="bg-color">
+          <label for="bgcolor"
+            ><span><i class="fa-solid fa-fill fa-lg"></i></span
+          ></label>
+          <input onchange="BackgroundColorchange(this)" type="color" id="bgcolor" style="width: 0px; height: 0px; visibility:hidden" />
+        </div>
+
+        <div>
+          <label for="textcolour"
+            ><span><i class="fa-solid fa-paintbrush fa-lg"></i></span
+          ></label>
+          <input onchange="textColorchange(this)" type="color" id="textcolour" style="width: 0px; height: 0px; visibility:hidden" />
+        </div>
+      </div>
+
+      <div class="options_Bar_Cover">
+        <div id="options">
+          <span id="Active_cell_Id">Null</span>
+        </div>
+      </div>
+    </div>
+
+  <!-- second hae -->
+    <div id="secondbox">
+        <!-- heading row -->
+      <div id="heading">
+        <b>Sr. No</b>
+      </div>
+
+      <!-- Section of the all row -->
+
+      <section id="body"></section>
+    </div>
+    <script src="./option.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

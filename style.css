@@ -1,0 +1,140 @@
+/* Css for Option bar */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.options_Bar_Cover{
+    display: flex;
+    width:100%;
+    background-color: #f0f3f4;
+    /* position:sticky;
+    top:48px;
+    left:0px;
+    right:0px; */
+    z-index:11;
+    justify-content:left;
+    text-decoration: underline;
+    
+    
+
+}
+
+#options{
+    background-color: #f0f3f4;
+    padding: 10px 0px;
+    width: 100vw;
+    display:flex;
+}
+
+
+
+#Active_cell_Id{
+    background-color: white;
+    padding: 5px 20px;
+    margin-left: 10px;
+}
+
+
+/* Heading css */
+
+#heading{
+    display:flex;
+    position: sticky;   
+    top:0px;
+    z-index: 100;
+}
+
+
+
+#heading>b{
+    border: 1px solid black;
+    min-width:50px;
+    background-color: #f0f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;  
+    position:sticky;
+    left: 0px;
+}
+
+#heading>div{
+    border: 1px solid black;
+    min-width:100px;
+    background-color: #f0f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    
+    
+}
+
+
+
+/* row css */
+
+
+.row{
+    display: flex;
+}
+
+
+.row>div{
+    border: 1px solid black;
+    min-width:100px;
+    max-width:100px;
+    max-height:40px;
+    background-color: #f0f3f4;
+    text-align:left;
+    padding: 10px 0px;
+    overflow-y: scroll;
+}
+
+
+.row>div::-webkit-scrollbar{
+    display: none;
+}
+
+
+.row>b{
+    border: 1px solid rgb(0, 0, 0);
+    min-width:50px;
+    background-color: #f0f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    position:sticky;
+    left:0px;
+    z-index:1;
+}
+
+
+/* Css for box sizing  */
+
+#secondbox{
+    width: 100%;
+    height: 83.9vh;
+    overflow-x:scroll;
+    overflow-y:scroll;
+    position:relative;
+}
+body{
+    width: 100%;
+    height: 100%;
+}   
+#firstbox{
+    width: 100%;
+    height: 30%;
+    position:sticky;
+    top:0px;
+    z-index: 100;
+}
+
+#secondbox::-webkit-scrollbar{
+    display: none;
+}
+
